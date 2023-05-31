@@ -23,7 +23,8 @@ body{
 .gallery .control-operator:nth-of-type(12):target ~ .controls .control-button:nth-of-type(12),
 .gallery .control-operator:nth-of-type(13):target ~ .controls .control-button:nth-of-type(13),
 .gallery .control-operator:nth-of-type(14):target ~ .controls .control-button:nth-of-type(14),
-.gallery .control-operator:nth-of-type(15):target ~ .controls .control-button:nth-of-type(15) {
+.gallery .control-operator:nth-of-type(15):target ~ .controls .control-button:nth-of-type(15),
+.gallery .control-operator:nth-of-type(16):target ~ .controls .control-button:nth-of-type(16) {
   color: white;
   color: rgba(255, 255, 255, 0.8);
 }
@@ -872,6 +873,19 @@ body{
     opacity: 0;
   }
 }
+@keyframes galleryAnimation-16 {
+  0% {
+    opacity: 0;
+  }
+
+  5.7%, 20% {
+    opacity: 1;
+  }
+
+  25.7%, 100% {
+    opacity: 0;
+  }
+}
 
 
 .gallery .control-operator:nth-of-type(1):target ~ .item:nth-of-type(1) {
@@ -938,6 +952,10 @@ body{
   opacity: 1;
 }
 .gallery .control-operator:nth-of-type(15):target ~ .item:nth-of-type(15) {
+  pointer-events: auto;
+  opacity: 1;
+}
+.gallery .control-operator:nth-of-type(16):target ~ .item:nth-of-type(16) {
   pointer-events: auto;
   opacity: 1;
 }
